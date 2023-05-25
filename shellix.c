@@ -97,6 +97,8 @@ int main(int argc, char **argv)
 						free(filepath);
 					}
 				}
+				if (filepath == NULL)
+					filepath = args[0];
 			}
 			else
 				filepath = args[0];
