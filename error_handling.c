@@ -70,6 +70,6 @@ void handle_exit_err(char *argv, char **args, int count)
 	y = write(STDERR_FILENO, args[0], _strlen(args[0]));
 	y = write(STDERR_FILENO, ": Illegal number: ", 18);
 	y = write(STDERR_FILENO, args[1], _strlen(args[1]));
-	y = write(STDERR_FILENO, "\n", 2);
+	y = write(STDERR_FILENO, "\n", 1);
 	free(num);
 }

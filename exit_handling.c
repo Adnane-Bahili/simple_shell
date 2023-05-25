@@ -43,11 +43,13 @@ int *exit_status){
 		{
 			handle_exit_err(argv[0], args, x);
 			*exit_fail = 2;
+			*exit_status = 2;
 		}
 		else
 		{
 			num %= 256;
 			free_args(args);
+			free(s);
 			exit(num);
 		}
 	}
@@ -55,6 +57,7 @@ int *exit_status){
 	{
 		handle_exit_err(argv[0], args, x);
 		*exit_fail = 2;
+		*exit_status = 2;
 	}
 	free_args(args);
 }

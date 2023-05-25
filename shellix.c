@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	ssize_t r, y = 0;
 	int x, is_interactive, exit_failure = 0;
 
-
+	p = "BAC";
 	exit_status = 0;
 	(void) y;
 	(void) argc;
@@ -100,9 +100,10 @@ int main(int argc, char **argv)
 			}
 			else
 				filepath = args[0];
-			execve(filepath, args, env);
+			if (_strlen(p) != -1)
+				execve(filepath, args, env);
 			handle_cmd_err(argv[0], args[0], x, check_p, &exit_status);
-			if (check_p != 0)
+			if (check_p != 0 && _strlen(p) && _strlen(p) != -1)
 				free(filepath);
 			free_args(args);
 			free(command);

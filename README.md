@@ -27,14 +27,14 @@ $ echo "echo 'Hello'" | ./shellix
 'Hello'
 $
 ```
-When sodash is invoked with standard input connected to a terminal (determined by isatty(3), the interactive mode is opened. sodash Will be using the following prompt :D .
+When `shellix` is invoked with standard input connected to a terminal (determined by isatty(3)), the interactive mode is opened. `shellix` Will be using the following prompt :D .
 
 Example:
 ```
 $./shellix
 :D
 ```
-If a command line argument is provided, Shellix will consider the first argument as a file from which it will read commands.
+If a command line argument is provided, `Shellix` will consider the first argument as a file from which it will read commands.
 
 Example:
 ```
