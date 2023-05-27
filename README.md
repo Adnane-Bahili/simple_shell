@@ -11,7 +11,7 @@ Simple Shell is a project for students at ALX. This endeavor serves as an extens
 
 The Simple Shell is a basic C program that functions as a UNIX command interpreter. It operates by executing bash commands entered by the user through the input stream, mimicking the behavior of a typical UNIX shell.
 ## Getting Started
-	  		  Tasks
+##			 Tasks
 
 	0. Betty would be proud
 
